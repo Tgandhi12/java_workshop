@@ -8,7 +8,7 @@ This repository contains **theory, examples, and practice problems** covering mo
 - Understand *why* modern Java features exist
 - Learn **clean, idiomatic Java**
 - Move from **imperative → declarative → type-safe** Java
-- Practice *problems** commonly asked in interviews
+- Practice problems
 - Students are encouraged to submit their own solutions via Pull Requests.
 
 ---
