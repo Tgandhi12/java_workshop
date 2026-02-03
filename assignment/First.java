@@ -15,7 +15,6 @@ interface NotificationService {
 
 public class First {
     public static void main(String[] args) {
-        // Simple lambda implementation of 'send'
         NotificationService service = (msg) -> {
             if (Math.random() > 0.5) throw new RuntimeException();
             System.out.println("Sent: " + msg);
@@ -23,4 +22,5 @@ public class First {
 
         service.sendWithRetry("Quick Test", 3);
     }
+
 }
