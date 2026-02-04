@@ -1,4 +1,4 @@
-sealed interface Payment {}
+sealed interface Payment permits CardPayment, UpiPayment {}
 
 final class CardPayment implements Payment {
     String number = "1234-5678";
@@ -10,8 +10,11 @@ final class UpiPayment implements Payment {
 
 public class Seventh {
     public static void main(String[] args) {
-        Payment myPay = new UpiPayment();
-        process(myPay);
+        Payment pay1 = new CardPayment();
+        Payment pay2 = new UpiPayment();
+
+        process(pay1);
+        process(pay2);
     }
 
     public static void process(Payment p) {
